@@ -1,5 +1,10 @@
 /* // <uniquifier>: Use a unique and descriptive class name */
 /* // <weight>: Use a value from 100 to 900 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 .noto-serif-classVar {
   font-family: "Noto Serif", serif;
@@ -41,7 +46,8 @@ body {
 
 .header h1 {
     margin: 0;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    font-weight: 900;
 }
 
 .Profile-Logo-Containder {
@@ -78,9 +84,10 @@ body {
 
 section {
     margin-bottom: 35px;
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
     padding: 5px 0;
     border-radius: 10px;
+    background-color: #6666660f;
 }
 
 h2 {
@@ -91,22 +98,25 @@ h2 {
     margin-bottom: 10px;
     padding-left: 10px;
     margin-top: 0;
+    font-weight: 900;
 }
 
 h3 {
     font-size: 1.2rem;
     color: #333;
-    margin-top: 10px;
+    /* margin-top: 10px; */
 }
 
 ul {
     list-style-type: disc;
     margin: 0;
-    padding-left: 30px;
+    padding-left: 42px;
+    padding-right: 15px;
 }
 
 ul li {
     margin-bottom: 10px;
+    font-size: 0.8rem;
 }
 
 strong {
@@ -114,7 +124,7 @@ strong {
 }
 
 p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 section p {
@@ -138,6 +148,36 @@ canvas {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
+}
+
+.skillsContainer{
+    margin: 10px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillElement{
+    background: #1E3050;
+    color: #ffff;
+    padding: 2px 13px;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 2px 5px;
+}
+
+.exp-item-header{
+    display: flex;
+    align-items: center;
+    margin-left: 18px;
+    margin-bottom: 15px;
+}
+
+.exp-item-header p {
+    padding: 0;
+    font-size: 0.8rem;
 }
 
 @media (max-width: 768px) {

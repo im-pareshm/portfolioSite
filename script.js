@@ -1,3 +1,16 @@
+const skillsList = [
+    'C#',
+    'DotNet',
+    'DotNet MVC',
+    'JavaScript',
+    'ReactJs',
+    'SQL Server',
+    'Git/Git Hub',
+    'HTML',
+    'CSS',
+    'MySql'
+]
+
 particlesJS("particles-js", {
     "particles": {
         "number": {
@@ -108,6 +121,22 @@ particlesJS("particles-js", {
     },
     "retina_detect": true
 });
+
+function appendSkills() {
+    let elements = ''
+
+    skillsList.forEach(item => {
+        let skillElement = `<span class="skillElement">${item}</span>`
+        elements = elements + skillElement
+    })
+
+    $('.skillsContainer').append(elements)
+}
+appendSkills()
+
+
+
+
 
 
 
