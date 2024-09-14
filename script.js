@@ -1,15 +1,15 @@
 const skillsList = [
     'C#',
-    'DotNet',
-    'DotNet MVC',
+    'ASP.NET (.NET Core, .NET 5/6/7)',
+    'ASP.NET MVC',
     'JavaScript',
-    'ReactJs',
+    'ReactJS',
     'SQL Server',
-    'Git/Git Hub',
+    'Git/GitHub',
     'HTML',
     'CSS',
-    'MySql'
-]
+    'MySQL'
+];
 
 particlesJS("particles-js", {
     "particles": {
