@@ -144,7 +144,7 @@ async function getQuotes() {
        console.log(data[0].content)
        console.log(data[0].author)
        $('#quotes-val').text(data[0].content)
-       $('#author-val').text(data[0].author)
+       $('#author-val').text('- ' + data[0].author)
        //quote.textContent = data.content;
        //cite.textContent = data.author;
      } else {
