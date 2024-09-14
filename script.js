@@ -135,6 +135,24 @@ function appendSkills() {
 appendSkills()
 
 
+async function getQuotes() {
+     // Fetch a random quote from the Quotable API
+     const response = await fetch("https://api.quotable.io/quotes/random?tags=technology&limit=1");
+     const data = await response.json();
+     if (response.ok) {
+       // Update DOM elements
+       console.log(data[0].content)
+       console.log(data[0].author)
+       //quote.textContent = data.content;
+       //cite.textContent = data.author;
+     } else {
+       quote.textContent = "An error occured";
+       console.log(data);
+     }
+}
+
+getQuotes()
+
 
 
 
